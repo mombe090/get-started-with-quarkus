@@ -43,9 +43,9 @@ jobs:
         # Automatically tags the built image with the git short SHA as per the readme
         tag_with_sha: # optional
         # Path to the build context
-        path: src/main/docker # optional, default is .
+        path:  # optional, default is .
         # Path to the Dockerfile (Default is '{path}/Dockerfile')
-        dockerfile: Dockerfile.fast-jar # optional
+        dockerfile: src/main/docker/Dockerfile.fast-jar # optional
         # Sets the target stage to build
         target: # optional
         # Always attempt to pull a newer version of the image
