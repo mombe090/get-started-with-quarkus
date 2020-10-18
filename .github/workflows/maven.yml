@@ -21,7 +21,7 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Maven
-      run: mvn compile --file pom.xml  quarkus:dev
+      run: mvn package -Dquarkus.package.type=fast-jar
 
     - uses: actions/checkout@v2
     - name: Build the Docker image
